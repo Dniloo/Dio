@@ -47,5 +47,7 @@ public class ListaTarefa {
 
    System.out.println(catLivros.pesquisarPorTitulo("Livro 1"));
    System.out.println(catLivros.pesquisarPorAutor("Autor 2"));
+   System.out.println(catLivros.pesquisaPorIntervaloAno(1900, 2000));
+
     }
 }

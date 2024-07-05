@@ -15,7 +15,7 @@ listaLivros.add(new Livro(titulo, autor, anoPublicacao));
 }
 public List<Livro> pesquisarPorAutor(String autor){
    List<Livro> livrosPorAutor= new ArrayList<>();
-    if(listaLivros.isEmpty()){
+    if(!listaLivros.isEmpty()){
         for (Livro l : listaLivros) {
            if (l.getAutor().equalsIgnoreCase(autor)){
             livrosPorAutor.add(l);
@@ -26,8 +26,8 @@ public List<Livro> pesquisarPorAutor(String autor){
 }
 public List<Livro> pesquisaPorIntervaloAno(int anoInicio, int anoFinal){
     List<Livro> livrosPorIntervaloAno= new ArrayList<>();
-    if(listaLivros.isEmpty()){
-       for (Livro l : livrosPorIntervaloAno) {
+    if(!listaLivros.isEmpty()){
+       for (Livro l : listaLivros) {
         if(l.getAnoPublicacao() >= anoInicio && l.getAnoPublicacao()<= anoFinal){
             livrosPorIntervaloAno.add(l);
         }
